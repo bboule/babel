@@ -12,6 +12,12 @@
     "@babel/helper-member-expression-to-functions": "^7.0.0",
     "@babel/helper-optimise-call-expression": "^7.0.0",
     "@babel/traverse": "^7.2.3",
-    "@babel/types": "^7.0.0"
-  }
+    "@babel/types": "^7.0.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
