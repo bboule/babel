@@ -11,6 +11,12 @@
   "dependencies": {
     "@babel/helper-hoist-variables": "^7.0.0",
     "@babel/traverse": "^7.1.0",
-    "@babel/types": "^7.0.0"
-  }
+    "@babel/types": "^7.0.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
